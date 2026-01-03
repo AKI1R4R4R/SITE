@@ -16,23 +16,16 @@ button:hover{
 
 }
 
-.btn_topo{
+.btn_topo2{
     position: fixed;
     top: 1rem;
     right: 1rem;
 
 }
 
-.btn_topo2{
-    position: fixed;
-    top: 5rem;
-    right: 1rem;
-
-}
-
 .btn_topo3{
     position: fixed;
-    top: 9rem;
+    top: 5rem;
     right: 1rem;
 
 }
