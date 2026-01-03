@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
 
     background-color: cadetblue;
-    background-image: url(WALL.jpg);
+    background-image: url(backgroundpagina.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,3 +92,4 @@ button:hover{
 
 
 }
+
