@@ -16,17 +16,10 @@ button:hover{
 
 }
 
-.btn_topo{
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-
-}
-
 .btn_topo2{
     position: fixed;
-    top: 5rem;
-    right: 1rem;
+    top: 3rem;
+    right: 2rem;
 
 }
 
@@ -37,6 +30,7 @@ button:hover{
     align-self: center;
     justify-content: center;
     background-color: cadetblue;
+
 }
 
 .view_0X0 img{
@@ -46,6 +40,7 @@ button:hover{
     height: auto;
     flex-shrink: 1;
     flex-grow: 0;
+
 }
 
 
@@ -55,6 +50,13 @@ button:hover{
     width: 100%;
     display: flex;
     background-color: cadetblue;
+    z-index: 3;
+}
+
+.view_0X1 img {
+
+    z-index: 1;
+
 }
 
 
@@ -73,6 +75,41 @@ button:hover{
     flex-grow: 0;
     font-size: 42px;
 }
+
+.centernome2{
+    top: 30rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    z-index: 2;
+}
+
+.nome2{
+    top:60px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    font-size: 62px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.nome3{
+    top:80px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    font-size: 62px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(223, 220, 228);
+}
+
+
+
+
+
 
 .icone{
     min-height: 20px;
