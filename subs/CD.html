@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styleCD.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <div class="BGC">
+
+        <a href="pagina2.html"><button class="btn_topo2">V O L T A R</button></a>
+
+    </div>
+
+    <div class="parent_x1">
+        
+        <div class="child_x1">
+
+            <input type="text" id="busca" placeholder="BUSCAR" class="Input_X2">
+
+            <input type="text" id="nome" placeholder="ADICIONAR" class="Input_X1">
+
+            <input type="text" id="deletar" placeholder="DELETAR" class="Input_X3">
+
+
+        </div>
+
+    </div>
+
+    <p id="mensagemBusca"></p>
+
+    <ul id="lista" class="lista"></ul>
+
+
+
+    <script>
+        let dados = JSON.parse(localStorage.getItem("dados")) || [];
+
+        function salvar() {
+        localStorage.setItem("dados", JSON.stringify(dados));
+        }
+
+        function render() {
+        const lista = document.getElementById("lista");
+        lista.innerHTML = "";
+
+        dados.forEach(item => {
+            lista.innerHTML += `
+            <li>
+                ${item.nome}
+            </li>
+            `;
+        });
+        }
+
+        function criar() {
+        const input = document.getElementById("nome");
+        const nome = input.value.trim();
+
+        if (nome === "") return;
+
+        dados.push({
+            id: Date.now(),
+            nome: nome
+        });
+
+        input.value = "";
+        salvar();
+        render();
+        }
+
+        function remover(id) {
+        dados = dados.filter(item => item.id !== id);
+        salvar();
+        render();
+        }
+
+        render();
+</script>
+
+
+
+<script>
+function filtrar() {
+    const termo = document.getElementById("busca").value.toLowerCase();
+    const listaItens = document.querySelectorAll("#lista li");
+    let contador = 0;
+
+    listaItens.forEach(li => {
+        const texto = li.textContent.toLowerCase();
+        if (texto.includes(termo)) {
+            li.style.display = ""; // mostra
+            contador++;
+        } else {
+            li.style.display = "none"; // esconde
+        }
+    });
+
+    // exibe a mensagem
+    const mensagem = document.getElementById("mensagemBusca");
+    mensagem.textContent = `${contador} Encontrados`;
+}
+
+</script>
+
+
+
+<script>
+
+    function deletarItem() {
+    const nomeDeletar = document.getElementById("deletar").value.trim().toLowerCase();
+
+    if (nomeDeletar === "") return;
+
+    // filtra os dados removendo os itens que correspondem ao nome
+    dados = dados.filter(item => item.nome.toLowerCase() !== nomeDeletar);
+
+    // limpa o input
+    document.getElementById("deletar").value = "";
+
+    salvar();
+    render();
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+const deletarInput = document.getElementById("deletar");
+
+    deletarInput.addEventListener("keydown", function(event) {
+
+        if(event.key === "Enter") {
+            deletarItem();
+
+        }
+
+});
+
+</script>
+
+
+
+
+
+
+<script>
+ const buscaInput = document.getElementById("busca");
+
+    buscaInput.addEventListener("keydown", function(event) {
+
+        if(event.key == "Enter") {
+            filtrar();
+
+        }
+
+    });
+
+</script>
+
+
+
+
+
+<script>
+    const input = document.getElementById("nome");
+
+    input.addEventListener("keydown", function(event) {
+
+        if(event.key === "Enter") {
+            criar();
+
+        }
+
+    });
+
+</script>
+    
+</body>
+</html>
