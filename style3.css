@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(144, 189, 191);
+    background-attachment: fixed;
+    margin: 0;
+}
+
+button{
+    background-color:cadetblue;
+    width: 100px;
+    height: 40px;
+    border-style: none;
+}
+
+button:hover{
+    background-color:rgb(207, 237, 238);
+
+}
+
+.btn_topo{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+
+}
+
+.btn_topo2{
+    position: fixed;
+    top: 5rem;
+    right: 1rem;
+
+}
+
+.view_0X0{
+    min-height: 50px;
+    width: 100%;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    background-color: cadetblue;
+}
+
+.view_0X0 img{
+
+    max-width: 100%;
+    width: 300%;
+    height: auto;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+
+.view_0X1{
+    position: fixed;
+    min-height: 140px;
+    width: 100%;
+    display: flex;
+    background-color: cadetblue;
+}
+
+
+.centernome{
+    right: 45.5%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.nome{
+    top:60px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    font-size: 42px;
+}
+
+.icone{
+    min-height: 20px;
+    min-width: 20px;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+
+}
+
+.link{
+    margin: 5rem;
+    min-height: 200px;
+    min-width: 200px;
+
+}
+
+.link img {
+
+    max-height: 200px;
+    max-width: 200px;
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+
+}
