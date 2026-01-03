@@ -1,134 +1,86 @@
-body {
-    background-color: rgb(144, 189, 191);
-    background-attachment: fixed;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>#2</title>
+</head>
+<body>
 
-button{
-    background-color:cadetblue;
-    width: 100px;
-    height: 40px;
-    border-style: none;
-}
+    <a href="../index.html"><button class="btn_topo">I N I C I O</button></a>
 
-button:hover{
-    background-color:rgb(207, 237, 238);
+    <a href="pagina3.html"><button class="btn_topo2">V O L T A R</button></a>
 
-}
+    <a href="CD.html"><button class="btn_topo3">L I S T A</button></a>
 
-.btn_topo{
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-
-}
-
-.btn_topo2{
-    position: fixed;
-    top: 5rem;
-    right: 1rem;
-
-}
-
-.view_X1 {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    background-color:  rgb(144, 189, 191);
-}
+    <div class="view_X1">
 
 
+            <div class="parent_X1">
 
 
-.parent_X1{
-    width: 340px;
-    box-sizing: border-box;
-    background-color: cadetblue;
-}
+                <div class="child_X1">
+
+                <h1>header</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nulla consequuntur totam officia assumenda repudiandae cupiditate vel vero inventore possimus, sed dolor et expedita velit soluta eaque excepturi! Suscipit, minus.</p>
+                <h1>header</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nulla consequuntur totam officia assumenda repudiandae cupiditate vel vero inventore possimus, sed dolor et expedita velit soluta eaque excepturi! Suscipit, minus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nulla consequuntur totam officia assumenda repudiandae cupiditate vel vero inventore possimus, sed dolor et expedita velit soluta eaque excepturi! Suscipit, minus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nulla consequuntur totam officia assumenda repudiandae cupiditate vel vero inventore possimus, sed dolor et expedita velit soluta eaque excepturi! Suscipit, minus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nulla consequuntur totam officia assumenda repudiandae cupiditate vel vero inventore possimus, sed dolor et expedita velit soluta eaque excepturi! Suscipit, minus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nulla consequuntur totam officia assumenda repudiandae cupiditate vel vero inventore possimus, sed dolor et expedita velit soluta eaque excepturi! Suscipit, minus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nulla consequuntur totam officia assumenda repudiandae cupiditate vel vero inventore possimus, sed dolor et expedita velit soluta eaque excepturi! Suscipit, minus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nulla consequuntur totam officia assumenda repudiandae cupiditate vel vero inventore possimus, sed dolor et expedita velit soluta eaque excepturi! Suscipit, minus.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nulla consequuntur totam officia assumenda repudiandae cupiditate vel vero inventore possimus, sed dolor et expedita velit soluta eaque excepturi! Suscipit, minus.</p>
+                <h1>header</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sequi laudantium illum saepe, quae architecto! Autem debitis inventore suscipit tempora iusto, accusamus in error perspiciatis quis molestiae quas fugit repudiandae?
+                
+                </div>
+
+
+            </div>
+                
+                <div class="parent_X2"> 
+
+
+                    <div class="parent_X3">
+
+                        <div class="child_X3">
+                            
+                            <img src="../audid.jpg" alt="">
+
+                        </div>
+
+                    </div>
+
+                    <div class="parent_X4">
+
+
+                        <div class="child_X4">
+
+                            <img src="../audid.jpg" alt="">
+
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="parent_X5">
+
+
+                        <div class="child_X5">
+
+                            <img src="../audid.jpg" alt="">
+
+                        </div>
+
+                    </div>
+
+
+            </div>
 
 
 
-.child_X1{
-    margin-top: 2rem;
-    margin-left: 1rem;
-    top: 10px;
-    left: 10px;
-}
+
+    </div>
 
 
-.view_X1 img {
-    
-    max-width: 100%;
-    width: 300%;
-    height: auto;
-    flex-shrink: 1;
-    flex-grow: 0;
-
-}
 
 
-.parent_X2{ 
 
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-.parent_X3{
-    margin-top: 10rem;
-    height: 600px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-
-.child_X3 {
-
-    width: 400px;
-    height: 400px;
-}
-
-
-.parent_X4{
-    margin-top: 20rem;
-    height: 600px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-
-.child_X4 {
-
-    width: 400px;
-    height: 400px;
-}
-
-
-.parent_X5{
-    margin-top: 20rem;
-    height: 600px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-
-.child_X5 {
-
-    width: 400px;
-    height: 400px;
-}
+</body>
+</html>
