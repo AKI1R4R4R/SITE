@@ -76,40 +76,6 @@ button:hover{
     font-size: 42px;
 }
 
-.centernome2{
-    top: 30rem;
-    margin-right: 1rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    z-index: 2;
-}
-
-.nome2{
-    top:60px;
-    flex-shrink: 1;
-    flex-grow: 0;
-    font-size: 62px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(0, 0, 0);
-}
-
-.nome3{
-    top:80px;
-    flex-shrink: 1;
-    flex-grow: 0;
-    font-size: 62px;
-    font-family:'Times New Roman', Times, serif;
-    color: rgb(223, 220, 228);
-}
-
-
-
-
-
 
 .icone{
     min-height: 20px;
@@ -141,3 +107,4 @@ button:hover{
     flex-wrap: wrap;
 
 }
+
