@@ -1,5 +1,6 @@
 body {
     background-color: cadetblue;
+    overflow-y: hidden;
     margin: 0;
     padding: 0  ;
     min-height: 100vh;
@@ -291,4 +292,5 @@ button:hover{
     top: 0.3rem;
     right: 0.5rem;
 }
+
 
